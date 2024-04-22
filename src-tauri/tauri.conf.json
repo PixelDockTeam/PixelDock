@@ -1,0 +1,141 @@
+{
+	"$schema": "../node_modules/@tauri-apps/cli/schema.json",
+	"build": {
+		"beforeBuildCommand": "bun run build",
+		"beforeDevCommand": "bun run dev",
+		"devPath": "http://localhost:5173",
+		"distDir": "../build"
+	},
+	"package": {
+		"productName": "PixelDock",
+		"version": "0.0.1" 
+	},
+	"tauri": {
+		"allowlist": {
+			"all": false,
+			"globalShortcut": {
+				"all": true
+			},
+			"path": {
+				"all": true
+			},
+			"os": {
+				"all": false
+			},
+			"http": {
+				"all": false,
+				"request": true,
+
+				"scope": [
+					"https://fitgirl-repacks.site/*",
+					"https://cdn.discordapp.com/*",
+					"https://raw.githubusercontent.com/PixelDock-team/*",
+					"https://**"
+				]
+			},
+			"fs": {
+				"all": false,
+				"createDir": true,
+				"exists": true,
+				"readDir": true,
+				"readFile": true,
+				"writeFile": true,
+				"removeFile": true,
+				"scope": [
+					"$APPLOCALDATA/plugins/*",
+					"$APPLOCALDATA/*"
+				]
+			},
+			"dialog": {
+				"open": true,
+				"save": false
+			},
+			"clipboard": {
+				"all": false,
+				"readText": true,
+				"writeText": true
+			},
+			"window": {
+				"all": false,
+				"close": true,
+				"hide": true,
+				"show": true,
+				"maximize": true,
+				"minimize": true,
+				"unmaximize": true,
+				"unminimize": true,
+				"startDragging": true,
+				"center": true
+			},
+			"shell": {
+				"all": false,
+				"open": true
+			}
+		},
+		"bundle": {
+			"active": true,
+
+			"category": "DeveloperTool",
+			"copyright": "",
+			"deb": {
+				"depends": []
+			},
+			"externalBin": [],
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+			"identifier": "com.PixelDock.dev",
+			"longDescription": "",
+			"macOS": {
+				"entitlements": null,
+				"exceptionDomain": "",
+				"frameworks": [],
+				"providerShortName": null,
+				"signingIdentity": null
+			},
+			"resources": [],
+			"shortDescription": "",
+			"targets": "all",
+			"windows": {
+				"certificateThumbprint": null,
+				"digestAlgorithm": "sha256",
+				"timestampUrl": ""
+			}
+		},
+
+		"security": {
+			"csp": null
+		},
+		"updater": {
+			"active": false
+		},
+		"windows": [
+			{
+				"fullscreen": false,
+				"height": 720,
+				"resizable": true,
+				"title": "PixelDock",
+				"width": 1280,
+				"minWidth": 1280,
+				"minHeight": 720,
+				"decorations": false,
+				"visible": false,
+				"center": true
+
+			},
+			{
+				"width": 1280,
+				"height": 720,
+				"decorations": false,
+				"resizable": true,
+				"url": "splashscreen.html",
+				"label": "splashscreen",
+				"center": true
+			}
+		]
+	}
+}

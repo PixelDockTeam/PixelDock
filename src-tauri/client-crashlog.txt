@@ -1,0 +1,39 @@
+4/14/2024 6:41:22 PM
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Learning\Rust\SevenSeas\src-tauri\Content\TerrariaMusic.xgs'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.Xna.Framework.Audio.AudioEngine..ctor(String settingsFile, TimeSpan lookAheadTime, String rendererId)
+   at Terraria.Audio.LegacyAudioSystem..ctor()
+   at Terraria.Main.LoadContent()
+   at Microsoft.Xna.Framework.Game.Initialize()
+   at Terraria.Main.Initialize()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Terraria.Program.RunGame()
+
+4/14/2024 6:42:34 PM
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Learning\Rust\SevenSeas\src-tauri\Content\TerrariaMusic.xgs'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.Xna.Framework.Audio.AudioEngine..ctor(String settingsFile, TimeSpan lookAheadTime, String rendererId)
+   at Terraria.Audio.LegacyAudioSystem..ctor()
+   at Terraria.Main.LoadContent()
+   at Microsoft.Xna.Framework.Game.Initialize()
+   at Terraria.Main.Initialize()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Terraria.Program.RunGame()
+
+4/14/2024 6:43:49 PM
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Learning\Rust\SevenSeas\src-tauri\Content\TerrariaMusic.xgs'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.Xna.Framework.Audio.AudioEngine..ctor(String settingsFile, TimeSpan lookAheadTime, String rendererId)
+   at Terraria.Audio.LegacyAudioSystem..ctor()
+   at Terraria.Main.LoadContent()
+   at Microsoft.Xna.Framework.Game.Initialize()
+   at Terraria.Main.Initialize()
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Terraria.Program.RunGame()
+

@@ -1,0 +1,68 @@
+[package]
+name = "app"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["you"]
+license = ""
+repository = ""
+default-run = "app"
+edition = "2021"
+rust-version = "1.60"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.5.1", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.6.1", features = [
+  "fs-remove-file",
+  "fs-write-file",
+  "fs-read-dir",
+  "fs-exists",
+  "fs-create-dir",
+  "path-all",
+  "fs-read-file",
+  "http-request",
+  "window-center",
+  "global-shortcut-all",
+  "dialog-open",
+  "clipboard-read-text",
+  "clipboard-write-text",
+  "window-show",
+  "window-minimize",
+  "window-unminimize",
+  "window-unmaximize",
+  "window-close",
+  "window-hide",
+  "window-maximize",
+  "window-start-dragging",
+  "shell-open",
+] }
+librqbit = { version = "5.5.2", features = ["webui"] } # Updated line
+tokio = { version = "1.34.0", features = ["rt-multi-thread"] }
+anyhow = "1.0.75"
+base64 = "0.22.0"
+http = "1.0.0"
+directories = "5.0.1"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "json"] }
+tracing = "0.1"
+serde_with = "3.4.0"
+parking_lot = "0.12.1"
+config = "0.14.0"
+tauri-plugin-store = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }
+rocket = "0.5"
+sqlx = { version = "0.7", features = [ "runtime-async-std", "tls-native-tls", "sqlite", "macros" ] }
+async-std = { version = "1.7.0", features = [ "attributes" ] }
+winapi =  { version = "0.3.9", features = ["winuser"] }
+
+
+[workspace]
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.
+# If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
