@@ -1,4 +1,4 @@
-# PixelDock: Your Ultimate Gaming Hub
+# PixelDock
 
 Dive into PixelDock, with a vast selection of games combined with community-driven enhancements. Experience seamless, secure
 gaming in a single universal hub.
@@ -6,9 +6,9 @@ gaming in a single universal hub.
 PixelDock is built with the cutting-edge technology of Tauri and
 SvelteKit, PixelDock offers an unparalleled gaming experience that's fast, secure, and cross-platform.
 
-## FAQ
+## Disclaimer
 
-We strongly encourage you to check out our landing page at [PixelDock.moe](https://PixelDock.moe/). Many of the questions are answered on this page.
+The project provided here is for educational purposes only.
 
 ## Features
 
@@ -16,7 +16,8 @@ Whilst the project is still under the development, we have a lot of features in 
 
 - A variety of tools to organise your game collection
 - A built-in torrent client
-- A calendar to remind you about upcoming game releases
+- Let you download games in
+- Library to save your downloaded games and launch it.
 - An API to allow the community to make third-party plugins
 - And much more in the future...
 
@@ -24,11 +25,11 @@ Whilst the project is still under the development, we have a lot of features in 
 
 To get started with PixelDock, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/PixelDock-team/PixelDock.git`
+1. Clone the repository: `git clone https://github.com/PixelDockTeam/PixelDock.git`
 2. Follow the prerequisites for setting up Tauri and SvelteKit as outlined in
    the [Tauri Getting Started Guide](https://tauri.app/v1/guides/getting-started/prerequisites).
-3. Install dependencies: `pnpm install`
-4. Launch the development server: `pnpm tauri dev`
+3. Install dependencies: `bun install`
+4. Launch the development server: `bun tauri dev`
 
 ### Environment Variables
 
@@ -39,10 +40,7 @@ To run PixelDock, you'll need to set up the following environment variables:
 - `PUBLIC_TWITCH_CLIENT_ID`: Twitch client ID (https://api-docs.igdb.com/#getting-started)
 - `PUBLIC_TWITCH_CLIENT_SECRET`: Twitch client secret (https://api-docs.igdb.com/#getting-started)
 
-### RD (Real Debrid)
 
-- `PUBLIC_RD_CLIENT_ID`: Open source app RD client ID found on the Real Debrid documentation (https://api.real-debrid.com/)
-  
 ## Contributing
 
 We welcome contributions to PixelDock! If you are looking for ways to contribute, here are some options:
@@ -62,12 +60,4 @@ Thanks to everyone who helps us make this possible. A list of contributors can b
 ## Contact
 
 For support, feature requests, or contributions, please visit
-our [GitHub repository](https://github.com/PixelDock-team) or contact us directly on the [Discord](https://discord.gg/mQpaWS3u24).
-
-Dive into the ultimate gaming experience with PixelDock today!
-
-<br />
-
-# ❤️
-
-Reminder that <strong><i>you are great, you are enough, and your presence is valued.</i></strong> If you are struggling with your mental health, please reach out to someone you love and consult a professional. You are not alone; there is a large range of resources online for support and guidance.
+our [GitHub repository](https://github.com/PixelDock-team)
